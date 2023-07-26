@@ -18,8 +18,23 @@ warehouse_id = "f16b0826-4049-42f1-a883-16e7d3c62590"  # Data warehouse ID
 # Calculate the last week number, last month number and year in UTC
 now = datetime.datetime.utcnow()
 year = now.isocalendar()[0]
-week_number = now.isocalendar()[1] - 1
-last_month = now.month - 1
+week_number = now.isocalendar()[1]
+month_number = now.month
+
+# Adjust for first week and month of the year
+if week_number == 1:
+    last_year = year - 1
+    last_week_of_last_year = datetime.datetime(last_year, 12, 31).isocalendar()[1]
+    week_number = last_week_of_last_year  # this will be 52 or 53
+    year -= 1
+else:
+    week_number -= 1
+
+if month_number == 1:
+    last_month = 12
+    year -= 1
+else:
+    month_number -= 1
 
 # Mute last week's tables
 def mute_last_week(year, week_number):
