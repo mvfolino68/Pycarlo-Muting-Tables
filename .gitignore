@@ -1,2 +1,5 @@
 .venv/
 .env
+monitors_as_code/__pycache__/
+monitors_as_code/example.yaml
+monitors_as_code/fields.csv
