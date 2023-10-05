@@ -5,9 +5,9 @@
 2. create .env file
    1. `cp .env.example .env`
    2. fill in the .env file with values from [https://getmontecarlo.com/settings/api](https://getmontecarlo.com/settings/api)
-3. make any adjustments to the `dbt.py` to match your needs
+3. make any adjustments to the `mc_muting_tables.py` to match your needs
 4. run the script
-   1. `python3 dbt.py`
+   1. `python3 mc_muting_tables.py`
 
 ## Additional Resources
 
