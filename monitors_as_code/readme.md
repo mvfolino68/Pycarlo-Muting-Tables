@@ -1,7 +1,17 @@
 
 # Monte Carlo Monitors as Code Script
 
-This project is a Python script that leverages Monte Carlo's Monitors as Code capabilities. Follow the instructions below to prepare your environment and run the script.
+This project is a Python script that leverages Monte Carlo's Monitors as Code capabilities. Follow the instructions below to prepare your environment and run the script. The script will create monitors for each field in the `fields.csv` file. You just provide the database, table, and column names in the CSV file.
+
+example `fields.csv`:
+
+   ```csv
+   "Database","Table","Column"
+   "prod","table_a","field_a"
+   "prod","table_a","field_b"
+   "prod","table_b","field_a"
+   "prod","table_b","field_b"
+   ```
 
 ## Instructions
 
