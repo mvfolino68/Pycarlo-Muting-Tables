@@ -27,9 +27,9 @@ example `fields.csv`:
 
    Create a CSV file named `fields.csv` in the `monitors_as_code` directory (where `mac.py` resides). This file should have the headers "Database", "Table", "Column".
 
-3. **Customize Script**
+3. **Customize `mac.py` or `template.py`**
 
-   Make any adjustments to the `mac.py` to match your needs.
+   Make any adjustments to the `mac.py` to match your needs. You can also use the `template.py` file as a starting point and make any adjustments to that file.
 
 4. **Run the Script**
 
