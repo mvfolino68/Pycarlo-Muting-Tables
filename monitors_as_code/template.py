@@ -14,7 +14,7 @@ template = {
         "field": ["{{field}}"],
         "table": ["{{table}}"],
         "datefield": ["timestamp"],
-        "lookback_days": [1],
+        "lookback_days": ["1"],
     },
     "comparisons": [{"type": "threshold", "operator": "GT", "threshold_value": 0.0}],
 }

@@ -1,16 +1,16 @@
 
 # Monte Carlo Monitors as Code Script
 
-This project is a Python script that leverages Monte Carlo's Monitors as Code capabilities. Follow the instructions below to prepare your environment and run the script. The script will create monitors for each field in the `fields.csv` file. You just provide the database, table, and column names in the CSV file.
+This project is a Python script that leverages Monte Carlo's Monitors as Code capabilities. Follow the instructions below to prepare your environment and run the script. The script will create monitors for each field in the `fields.csv` file. You just provide the `database`, `table`, `column` and `namespace` names in the CSV file.
 
 example `fields.csv`:
 
    ```csv
-   "Database","Table","Column"
-   "prod","table_a","field_a"
-   "prod","table_a","field_b"
-   "prod","table_b","field_a"
-   "prod","table_b","field_b"
+   "Database","Table","Column","Namespace"
+   "prod","table_a","field_a","prod"
+   "prod","table_a","field_b","prod"
+   "prod","table_b","field_a","prod"
+   "prod","table_b","field_b","prod"
    ```
 
 ## Instructions
@@ -25,7 +25,7 @@ example `fields.csv`:
 
 2. **Prepare Fields CSV**
 
-   Create a CSV file named `fields.csv` in the `monitors_as_code` directory (where `mac.py` resides). This file should have the headers "Database", "Table", "Column".
+   Create a CSV file named `fields.csv` in the `monitors_as_code` directory (where `mac.py` resides). This file should have the headers "Database", "Table", "Column", "Namespace" and a row for each field you want to create a monitor for. See the example above.
 
 3. **Customize `mac.py` or `template.py`**
 
