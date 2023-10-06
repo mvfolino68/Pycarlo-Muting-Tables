@@ -39,6 +39,18 @@ example `fields.csv`:
    python3 mac.py
    ```
 
+5. **Review the Output**
+
+   The script will output Monitors as Code YAML files in the `monitors_as_code` directory. You can review these files and make any adjustments as needed.
+
+6. **Use Monte Carlo CLI to Deploy**
+
+   Use the Monte Carlo CLI to deploy the monitors to your environment. See the [Monte Carlo CLI documentation](https://docs.getmontecarlo.com/docs/using-the-cli) for setup instructions.
+
+   ```sh
+   montecarlo monitors apply 
+   ```
+
 ## Additional Resources
 
 - [Monte Carlo Monitors as Code Documentation](https://docs.getmontecarlo.com/docs/monitors-as-code)
